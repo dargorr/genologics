@@ -259,7 +259,7 @@ class UdfDictionary(object):
             else:
                 raise NotImplemented("UDF type '%s'" % type)
             if not isinstance(value, unicode):
-                value = unicode(value, 'UTF-8')
+                value = unicode(str(value), 'UTF-8')
             node.text = value
             break
         else:                           # Create new entry; heuristics for type
@@ -285,7 +285,7 @@ class UdfDictionary(object):
                                           type=type,
                                           name=key)
             if not isinstance(value, unicode):
-                value = unicode(value, 'UTF-8')
+                value = unicode(str(value), 'UTF-8')
             elem.text = value
 
     def __delitem__(self, key):

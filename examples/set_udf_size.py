@@ -1,6 +1,9 @@
 """Python interface to GenoLogics LIMS via its REST API.
     
-    Usage example: Get some processes.
+    Usage example: set_udf_size.py user password processURI 
+    
+    Works with output files from 'Bioanalyzer QC (DNA) 4.0' Process.
+    Set UDF 'Size (bp)' by copying the value from 'Region 1 Average Size - bp'
     
     
     
